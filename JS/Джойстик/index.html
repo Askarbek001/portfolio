@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  #block{
+  width: 600px;
+  height: 600px;
+  border: 2px solid black;
+}
+#ball{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: green;
+  transition: 5s linear;
+}
+</style>
+<body>
+  <div id="block">
+    <div id="ball"></div>
+  </div>
+  <script>
+    
+let body = document.body
+let a = 0
+let b = 0
+
+body.onkeydown = (e) => {
+  if(e.keyCode == 87){
+    ball.style.top = "0";
+  }
+  else if(e.keyCode == 65){
+    ball.style.left = "0"
+  }
+  else if(e.keyCode == 83){
+    ball.style.top = "550px"
+
+  }
+  else if(e.keyCode == 68){
+    ball.style.left = "550px"
+  }
+}
+
+  </script>
+</body>
+</html>

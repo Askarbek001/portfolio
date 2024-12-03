@@ -1,0 +1,562 @@
+* {
+	transition: 1s;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteiner-for-main {
+	width: 90%;
+	position: relative;
+	margin: 0 auto;
+}
+.box-for-text {
+	margin-top: 2pc;
+	text-align: center;
+}
+.text-min {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: larger;
+	margin: 0;
+	text-shadow: 1px 1px 1px rgb(100, 100, 100), 2px 2px 4px rgb(134, 134, 134);
+}
+.text-big {
+	font-family: "Nike Futura ND", "Helvetica Now Text Medium", Helvetica, Arial,
+		sans-serif;
+	font-weight: bolder;
+	font-optical-sizing: auto;
+	font-variant-alternates: normal;
+	font-stretch: 100%;
+	font-size-adjust: none;
+	font-size: clamp(3rem, 7vw, 5rem);
+	letter-spacing: -0.2pc;
+	font-language-override: normal;
+	font-feature-settings: normal;
+	margin: 0;
+	text-transform: uppercase;
+	color: rgb(17, 17, 17);
+	text-shadow: 3px 3px 1px rgb(100, 100, 100), 6px 6px 8px rgb(197, 197, 197);
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+.many-text {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: clamp(1rem, 2vw, 1.5rem);
+	font-weight: 400;
+	text-shadow: 0.2px 0.2px 0.1px rgb(100, 100, 100),
+		1px 1px 2px rgb(134, 134, 134);
+	line-height: 1.5rem;
+	color: #121212;
+}
+.link_shop {
+	width: 120px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	position: relative;
+	left: 50%;
+	margin-top: 3pc;
+	transform: translate(-50%);
+	height: 30px;
+	display: flex;
+	background-color: black;
+	justify-content: center;
+	align-items: center;
+	transition: 0.8s;
+	text-decoration: none;
+	font-size: auto;
+	color: white;
+}
+.link_shop:hover {
+	transition: 0.3s;
+	font-size: larger;
+	letter-spacing: 1px;
+	font-weight: bolder;
+	border-radius: 5px;
+	background-color: #000000;
+}
+
+.box-for-pictures {
+	width: 100%;
+	margin-top: 6pc;
+}
+.box_objekt {
+	display: flex;
+}
+.box_objekt_img_text {
+	min-width: 32.5%;
+	margin: 3px;
+	position: relative;
+	scroll-snap-align: start;
+}
+
+.box_objekt_img__img {
+	position: relative;
+	width: 100%;
+}
+.box_objekt_img_text:nth-last-child(3)::after {
+	width: 80%;
+	content: "Jonathan Simms, Allen High School, World Lead U16 400m Race Day Essentials";
+	top: 50%;
+	left: 0;
+	font-size: clamp(5px, 1vw, 20px);
+	position: absolute;
+	color: white;
+	padding: 10px;
+	backdrop-filter: blur(4px);
+	text-shadow: 0 0 3px black, 0 0 10px rgb(145, 145, 145);
+}
+.box__fix_objekt {
+	margin-top: 6pc;
+}
+
+.box_objekt__text {
+	font-size: clamp(10px, 1vw, 15px);
+	color: #333333;
+}
+.box-objekt__text_little-big {
+	font-size: clamp(13px, 1vw, 22px);
+}
+
+.box-for-pictures-wrap {
+	margin-top: 6pc;
+}
+.box-images-stil {
+	width: 100%;
+	display: flex;
+}
+.box-images-still__box-for-still-images-one {
+	position: relative;
+	margin: 5px;
+	width: 100%;
+}
+.box-images-still__box-for-still-images-one::after {
+	content: "Sally Aguirre, @sallys_shoes";
+	position: absolute;
+	top: 0;
+	z-index: 2;
+	text-shadow: 0 0 2px rgb(162, 162, 162), 0 0 5px black;
+	right: 0;
+	padding: 10px;
+	font-size: clamp(0.8rem, 1vw, 1.5rem);
+	color: white;
+	backdrop-filter: blur(5px);
+}
+.img-still {
+	width: 100%;
+}
+.box-text-btn-fix {
+	position: absolute;
+	left: 10%;
+	top: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.text-min-hpl {
+	text-shadow: 0 0 5px black;
+	backdrop-filter: blur(1px);
+	color: white;
+	margin-top: 0px;
+	margin-bottom: 0;
+	display: inline-block;
+}
+.text-big-hpl {
+	margin: 15px 0;
+	font-size: clamp(1.8rem, 3vw, 3rem);
+}
+.link-regidt-still {
+	width: 50%;
+	margin: 0 auto;
+	padding: clamp(6px, 0.2vw, 10px);
+	border-radius: 30px;
+	text-align: center;
+	background-color: black;
+}
+.link-regidt-still a {
+	width: auto;
+	color: white;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	font-size: larger;
+	text-decoration: none;
+}
+.link-regidt-still:hover {
+	transition: 0.2s;
+	backdrop-filter: blur(10px);
+	background-color: #3333333c;
+}
+.box_forscroll_sneakers {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1pc;
+	margin-top: 6pc;
+}
+
+.box_forscrollsneakers_button {
+	display: flex;
+	flex-direction: row;
+}
+.link-regidt {
+	font-size: large;
+	text-decoration: none;
+	color: black;
+}
+.box_forscrollsneakers_btn {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	border: none;
+	padding: 10px;
+	font-size: 20px;
+}
+.sneakers_product {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+}
+.img_for_fix {
+	width: 100%;
+	scroll-snap-align: start;
+}
+.box_for_products {
+	margin: 2px;
+	min-width: 33%;
+}
+.box_forproducts_name {
+	font-size: 20px;
+}
+.box_forproducts_h5 {
+	margin-left: 8px;
+	margin-top: 0.5pc;
+	color: #918f8f;
+}
+.box_forproducts_price {
+	margin-left: 8px;
+	margin-top: 0.5pc;
+}
+.box_for_cards {
+	margin-top: 6pc;
+}
+.member__products {
+	width: 100%;
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+}
+.box_for_member {
+	width: 100%;
+	scroll-snap-align: start;
+}
+.img_for_member {
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.classic__text {
+	font-size: 25px;
+}
+.images {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	transition: transform 0.3s ease;
+}
+.photos {
+	min-width: 32%;
+	margin: 8px;
+	position: relative;
+}
+
+.box__pictures {
+	width: 100%;
+	height: 100%;
+	scroll-snap-align: start;
+}
+.classic__btn {
+	font-size: 25px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.second__images {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	transition: transform 0.3s ease;
+}
+.second__photos {
+	min-width: 40%;
+	margin: 8px;
+	position: relative;
+}
+.second__photos__img {
+	width: 100%;
+}
+/* ---------------------------------------------------------- */
+.second__page {
+	position: relative;
+	margin-top: 6pc;
+}
+.classic__text {
+	font-size: 25px;
+}
+.images {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	transition: transform 0.3s ease;
+}
+.photos {
+	min-width: 32%;
+	margin: 8px;
+	position: relative;
+}
+.box_forscroll_sneakers2 {
+	margin-top: 6pc;
+}
+.box__pictures {
+	width: 100%;
+	height: 100%;
+	scroll-snap-align: start;
+}
+.second__text {
+	font-size: 25px;
+	display: flex;
+	justify-content: space-between;
+}
+.classic__btn {
+	font-size: 25px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.second__images {
+	width: 100%;
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	transition: transform 0.3s ease;
+}
+.second__photos {
+	min-width: 40%;
+	margin: 8px;
+}
+.second__photos__img {
+	width: 100%;
+}
+/* ------------------------------------------------------------------ */
+@media (max-width: 960px) {
+	.second__photos {
+		min-width: 60%;
+	}
+	.photos {
+		min-width: 45%;
+	}
+	.box-text-btn-fix {
+		top: 60%;
+	}
+	.box_objekt_img_text:last-child::after {
+		font-size: clamp(5px, 2vw, 20px);
+	}
+	.box_objekt {
+		overflow-x: scroll;
+		scroll-snap-type: x mandatory;
+		overflow-y: hidden;
+	}
+	.box-objekt__text_little-big {
+		font-size: clamp(10px, 2vw, 18px);
+	}
+	.box_objekt__text {
+		font-size: clamp(8px, 2vw, 15px);
+	}
+	.box_objekt_img_text {
+		min-width: 60%;
+	}
+	.centered {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.box_for_products {
+		min-width: 40%;
+	}
+}
+@media (max-width: 550px) {
+	.box_for_products {
+		min-width: 90%;
+	}
+	.photos {
+		min-width: 80%;
+	}
+	.second__photos {
+		min-width: 85%;
+	}
+}
+@media (max-width: 600px) {
+	.second__photos {
+		min-width: 80%;
+	}
+	.photos {
+		min-width: 60%;
+	}
+	.box_for_products {
+		min-width: 60%;
+	}
+	.box-text-btn-fix {
+		top: 65%;
+		line-height: clamp(0.5rem, 2vw, 1rem);
+	}
+	.text-min-hpl {
+		color: white;
+		font-size: clamp(0.2rem, 5vw, 1.2rem);
+	}
+	.text-big-hpl {
+		font-size: clamp(1rem, 8vw, 2rem);
+	}
+	.box-images-still__box-for-still-images-one::after {
+		text-align: end;
+		width: auto;
+		font-size: clamp(0.8rem, 2vw, 1.5rem);
+	}
+	.box-images-stil {
+		display: block;
+	}
+	.box-for-text {
+		text-align: start;
+	}
+	.link_shop {
+		left: auto;
+		transform: translate(0);
+	}
+	.text-big {
+		text-shadow: 1px 1px 0.1px black;
+	}
+	.text-min {
+		margin: 0.5pc;
+	}
+	.box_for__scrollsneakers_dark {
+		font-size: clamp(1rem, 5vw, 1.8rem);
+	}
+	.box_forscrollsneakers_btn {
+		width: 40px;
+		height: 40px;
+	}
+	.link-regidt-still {
+		width: 45%;
+		margin: clamp(15px, 10vw, 20px) auto;
+		padding: clamp(10px, 2vw, 15px);
+	}
+}
+
+.box__for__scroll__sneakers {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1pc;
+}
+.box__for__scroll__sneakers__btn {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	border: none;
+	font-size: 20px;
+}
+.sneakers_product {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+}
+.img_for_fix {
+	width: 100%;
+	scroll-snap-align: start;
+}
+.box__for__products {
+	margin: 8px;
+	min-width: 33%;
+}
+.box__for__products__name {
+	font-size: 20px;
+}
+.box__for__products__h5 {
+	margin-left: 8px;
+	margin-top: 0.5pc;
+	color: #918f8f;
+}
+.box__for__products__price {
+	margin-left: 8px;
+	margin-top: 0.5pc;
+}
+.container__2 {
+	max-width: 85%;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+.box__for__cards {
+	margin-top: 6pc;
+}
+.member__products {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+}
+.box__for__member {
+	min-width: 33%;
+	margin: 8px;
+	position: relative;
+}
+.img__for__member {
+	width: 100%;
+	scroll-snap-align: start;
+}
+.box__for__text {
+	position: absolute;
+	top: 70%;
+	left: 10%;
+	color: white;
+}
+.box__for__text__btn {
+	width: 120px;
+	height: 40px;
+	border: none;
+	border-radius: 30px;
+	margin-top: 2.5pc;
+}
+.box__for__text__btn:hover {
+	color: white;
+	background-color: black;
+	transition: 0.8s;
+}
+.box__for__text__h3 {
+	font-size: 23px;
+}
+.box__for__text__p {
+	line-height: 40px;
+}
+.block__for__text {
+	margin-top: 6pc;
+	max-width: 60%;
+	display: flex;
+	justify-content: space-evenly;
+	text-align: start;
+}
+.box__for__featured {
+	text-align: end;
+}
+.block__for__text__tema {
+	font-size: 20px;
+	margin-left: 60px;
+}

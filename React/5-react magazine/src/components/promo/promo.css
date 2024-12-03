@@ -1,0 +1,85 @@
+.promo{
+  margin-bottom: 63px;
+}
+.promo__content{
+  display: flex;
+  column-gap: 24px;
+  padding-top: 68px;
+  padding-left: 120px;
+  border-radius: 59px;
+  background-color: #F4F6F5;
+}
+.promo__title{
+max-width: 480px;
+font-weight: 900;
+font-size: 96px;
+line-height: 1.25;
+margin-bottom: 40px;
+}
+.promo__subtitle{
+margin-bottom: 32px;
+font-weight: 400;
+font-size: 32px;
+line-height: 1.5;
+letter-spacing: -0.05em;
+}
+.promo__btn__wrapper{
+display: flex;
+column-gap: 34px;
+align-items: center;
+}
+.promo__btn__wrapper::before{
+  content: "";
+  display: inline-block;
+  width: 190px;
+  height: 32px;
+  background-image: url("./../../images/Logo/Vector 9.svg");
+}
+.promo__btn{
+padding: 18px 40px;
+background: #000000;
+border-radius: 10px;
+font-weight: 500;
+font-size: 30px;
+line-height: 1.5;
+letter-spacing: -0.05em;
+color: #fff;
+}
+.promo__image{
+border-bottom-right-radius: 60px;
+}
+.highlight{
+  position: relative;
+  display: inline-block;
+}
+.highlight span {
+  position: relative;
+}
+.highlight::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  bottom: 0;
+  left: -40px;
+  right: -160px;
+  background-color: #fff;
+  transform: rotate(-2deg);
+}
+.highlight__yellow::before{
+  background-color: #EBD96B;
+  right: -110px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+body{
+  background-image: url(/photos/1693332469_havio-club-p-shikarnii-stol-s-yedoi-pinterest-1.jpg);
+  backdrop-filter: blur(10px);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.section__texts{
+  padding-top: 40px;
+  width: 90%;
+  margin: 0 auto;
+  color: rgb(112, 23, 23);
+}
+.logo{
+  display: flex;
+  justify-content: space-between;
+}
+.logo__image{
+  width: 100px;
+}
+.menu__texts{
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+  font-size: 20px;
+  width: 500px;
+  justify-content: space-between;
+}
+.menu__text:hover{
+  color: red;
+  border-bottom: 2px solid red;
+}
+.magazine{
+  background-color: rgba(245, 222, 179, 0);
+  border-radius: 20px;
+  border: none;
+  margin-top: 10px;
+}
+section{
+  margin-top: 20px;
+}
+.window{
+  position: relative;
+  top: 20px;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.148);
+  border-radius: 20px;
+}
+.kebab{
+  position: absolute;
+  width: 600px;
+  right: 10px;
+  top: -10px;
+}
+.menu__pizza{
+  background-color: rgba(255, 255, 255, 0.192);
+  border-radius: 30px;
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  transition: 1s;
+}
+.pizza__image{
+  width: 300px;
+  transition: 0.2s;
+
+  position: relative;
+}
+.pizza__image:hover{
+  transform: scale(1.1);
+  margin-top: -25px;
+}
+h4{
+  position: relative;
+  top: 1pc;
+}
+.cart{
+  width: 50px;
+  height: 60px;
+  border: none;
+  background-color: black;
+  border-radius: 10px;
+  border-bottom-right-radius: 30px;
+}

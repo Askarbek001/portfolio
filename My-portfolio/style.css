@@ -1,0 +1,146 @@
+/* ______HEADER___________________________________ */
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  top: 10px;
+}
+.head__logo {
+  width: 50%;
+  height: 50px;
+}
+.head__logo__text {
+  color: white;
+}
+.head__menu {
+}
+.head__menu__items {
+  display: flex;
+  align-items: center;
+}
+.head__menu__item {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+}
+.menu__item__text{
+  color: white;
+  font-size: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+.menu__item__text:hover{
+  border-bottom: white solid 2px;
+  transition: 0.2s linear;
+}
+.last__menu__item{
+  padding: 0px 0px 0px 20px;
+}
+.head__menu__item:not(:last-child){
+padding: 0px 20px;
+}
+ 
+
+/* ______MAIN________________________ */
+.section__aboutme{
+  margin-top: 50px;
+}
+.section__aboutme::after{
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  background-image: url(/photos/1654385313_41-celes-club-p-oboi-na-rabochii-stol-dlya-programmistov-k-46.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 60%;
+}
+.section__container {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 2;
+}
+.section__content {
+  padding: 100px 0px;
+  line-height: 2;
+}
+.section__title {
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+}
+.section__subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+
+}
+.btn__aboutme {
+  background-color: #8491ab;
+  color: white;
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 15px 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0px 20px 0px 20px;
+}
+.content__image {
+}
+.myphoto {
+  width: 400px;
+}
+.content__contacts {
+position: absolute;
+width: 50px;
+top: 50px;
+left: 1270px;
+}
+.contact__img{
+  padding: 20px 0px;
+}
+
+.contact{
+  margin-top: 70px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1140px) { 
+   
+} 
+  
+@media screen and (max-width: 992px) { 
+   
+} 
+ 
+@media screen and (max-width: 768px) { 
+    
+} 
+ 
+@media screen and (max-width: 576px) { 
+   
+} 
+
+@media screen and (max-width: 414px) { 
+    
+} 
+
+@media screen and (max-width: 320px) { 
+ 
+}

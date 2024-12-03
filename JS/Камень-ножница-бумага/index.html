@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .row{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    height: 300px;
+  }
+  .col{
+    width: 300px;
+    height: 300px;
+    border: black solid 1px;
+  }
+  #computer{
+    width: 300px;
+    height: 300px;
+    border: black solid 1px;
+    transform: scaleX(-1);
+  }
+  .photo{
+    width: 200px;
+    height: 200px;
+  }
+  .image{
+    width: 100%;
+    height: 100%;
+    border: 5px solid black;
+  }
+  #result{
+    margin-top: 100px;
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    font-size: 20px;
+  }
+  #photos{
+    margin-top: 20px;
+    width: 600px;
+    display: flex;
+  }
+  #img__my{
+    width: 300px;
+    height: 300px;
+  }
+
+</style>
+<body>
+  <div class="row">
+    <div id="my" class="col"></div>
+    <div id="result"></div>
+    <div id="computer"></div>
+  </div>
+  <div id="photos">
+    <div class="photo">
+      <img id="img__one" class="image" src="/images/1.png" alt="">
+    </div>
+    <div class="photo">
+      <img id="img__two" class="image" src="/images/2.png" alt="">
+    </div>
+    <div class="photo">
+      <img id="img__three" class="image" src="/images/3.png" alt="">
+    </div>
+  </div>
+  <script>
+    // ________________Камень-ножницы-бумага_____________________________________
+    let image = document.getElementById('photos');
+    let comp = [
+      `<img id="img__my" src="/images/1.png" alt="">`,
+      `<img id="img__my" src="/images/2.png" alt="">`,
+      `<img id="img__my" src="/images/3.png" alt="">`
+    ]
+    
+    img__one.onclick = () => {
+      my.innerHTML = `<div><img id="img__my" src="/images/1.png" alt=""></div>`
+    }
+    img__two.onclick = () => {
+      my.innerHTML = `<div><img id="img__my" src="/images/2.png" alt=""></div>`
+    }
+    img__three.onclick = () => {
+      my.innerHTML = `<div><img id="img__my" src="/images/3.png" alt=""></div>`
+    }
+
+    image.onclick = () => {
+    let a = comp[Math.floor(Math.random() * comp.length)]
+    computer.innerHTML = `<div>${a}</div>`
+
+     if (
+      (my.innerHTML == `<div><img id="img__my" src="/images/1.png" alt=""></div>`) && computer.innerHTML == `<div><img id="img__my" src="/images/3.png" alt=""></div>` ||
+      (my.innerHTML == `<div><img id="img__my" src="/images/2.png" alt=""></div>`) && computer.innerHTML == `<div><img id="img__my" src="/images/1.png" alt=""></div>` ||
+      (my.innerHTML == `<div><img id="img__my" src="/images/3.png" alt=""></div>`) && computer.innerHTML == `<div><img id="img__my" src="/images/2.png" alt=""></div>`
+    ) {
+      result.innerText = "Вы выиграли";
+    }
+    else if(my.innerHTML == computer.innerHTML){
+      result.innerText = "Ничья"
+    }
+    else{
+      result.innerText = "Вы проиграли"
+    }
+    }
+
+
+  </script>
+</body>
+</html>
